@@ -34,3 +34,7 @@ CREATE TABLE authorities(
 	username VARCHAR(50),
 	authority VARCHAR(50)
 );
+
+DELETE FROM tbl_users  WHERE id = 3;
+SELECT * FROM tbl_users;
+COMMIT;
