@@ -20,14 +20,18 @@ CREATE TABLE users(
     enabled BOOLEAN
 );
 
+-- 2020-04-10 변경
+-- tbl_users 테이블 변경
+-- user_name 칼럼 UNIQUE로 변경
 -- DROP TABLE tbl_users;
 CREATE TABLE tbl_users(
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
-	user_name VARCHAR(50) ,
+	user_name VARCHAR(50) UNIQUE,
     user_pass VARCHAR(125),
     enabled BOOLEAN
 );
 
+-- 로그인한 User의 권한들을 보관할 TABLE
 -- DROP TABLE authorities;
 CREATE TABLE authorities(
 	id BIGINT PRIMARY KEY AUTO_INCREMENT,
