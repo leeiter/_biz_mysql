@@ -39,7 +39,7 @@ CREATE TABLE authorities(
 	authority VARCHAR(50)
 );
 
-DELETE FROM tbl_users  WHERE id = 5;
+DELETE FROM tbl_users  WHERE id = 40;
 DELETE FROM authorities  WHERE username = 'admin';
 SELECT * FROM tbl_users;
 SELECT * FROM authorities;
